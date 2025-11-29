@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Promises</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <div class="container page">
+          <a class="back-link" href="./index.html">← Go back</a>
+
+          <h1 class="page-title">Створення промісу</h1>
+
+          <form class="form" id="promise-form">
+            <label class="form-field">
+              <span class="form-label">Delay (ms)</span>
+              <input
+                type="number"
+                name="delay"
+                required
+                class="form-input"
+                placeholder="Наприклад 2000"
+              />
+            </label>
+
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">State</legend>
+
+              <label class="form-radio">
+                <input type="radio" name="state" value="fulfilled" required />
+                <span>Fulfilled</span>
+              </label>
+
+              <label class="form-radio">
+                <input type="radio" name="state" value="rejected" required />
+                <span>Rejected</span>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="form-button">
+              Create notification
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
